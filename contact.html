@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Style Guide Project</title>
+<!--meta tags: charset, http-equiv, viewport, description, keywords, author-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moss Goguen Design Portfolio">
+<meta name="keywords" content="Portfolio, design, graphic design, site, site planning, Web design, graphics,">
+<meta name="author" content="Moss Goguen">
+<!-- webpage's stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<!--text and media, visble to user -->
+<body>
+<!--sidebar navigation-->
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <button class="dropdown-btn"> Projects 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="Brochure-project.html">Branding and Brochure Design</a>
+            <a href="Style-guide-project.html">Style Guide Design</a>
+            <a href="Poster-nd_vignette-project.html">Festival Branding Design</a>
+        </div>
+        <diva class="current-page" href="contact.html">Contact</diva>
+</div>
+<!--Script for sidebar navigation-->
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script> 
+
+<header>
+    <h1>Contact</h1>
+</header>
+<div class="page-elements">
+    <h2>Send a message for any questions/inquries!</h2>
+    
+    <form action="mailto:moss.a.goguen@gmail.com">
+      <fieldset>
+        <legend>Name and Contact:</legend>
+            <label for="fullname">Full Name:</label>
+                <br>
+                <input type="text" id="fullname" name="fullname" placeholder="enter here" required>
+                <br>
+            <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="example@email.com">
+                <br>
+            <label for="phone">Phone Number (optional):</label>
+                <br>
+                <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+      </fieldset>
+      <fieldset>
+                <legend>Message:</legend>
+            <label for="subject">Subject:</label>
+                <br>
+                <input type="text" id="subject" name="subject" placeholder="enter here" required>
+                <br>
+            <label for="message">Compose Message:</label>
+                <textarea rows="5" cols="25" id="message" name="message" placeholder="type here"></textarea>
+            <br>
+            <input type="submit" value="Submit" style="background-color: var(--background-green); border-radius: 15px; font-family:'allotrope', sans-serif; color: var(--Title-green); font-size:16px;" >
+      </fieldset>
+    </form>
+<!--end of page dont touch div-->
+</div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Festival Event Branding</title>
+<!--meta tags: charset, http-equiv, viewport, description, keywords, author-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moss Goguen Design Portfolio">
+<meta name="keywords" content="Portfolio, design, graphic design, site, site planning, Web design, graphics,">
+<meta name="author" content="Moss Goguen">
+<!-- webpage's stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<!--text and media, visble to user -->
+<body>
+    <!--sidebar navigation-->
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <button class="dropdown-btn"> Projects 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="Brochure-project.html">Branding and Brochure Design</a>
+            <a href="Style-guide-project.html">Style Guide Design</a>
+            <diva class="current-page" href="Poster-nd_vignette-project.html">Festival Branding Design</diva>
+        </div>
+        <a href="#contact.html">Contact</a>
+      </div>
+<!--Script for sidebar navigation-->
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script> 
+<header>
+    <h1>Festival Event Branding</h1>
+</header>
+<div class="page-elements">
+    <h2>Project Description</h2>
+    <p>Creation of a concept for a festival and convention for rhythm games. This includes logo design, an advertisment poster, and mockups of merchandise with uniform design and branding.</p>
+   
+    <b>Contained in this project:</b>
+        <ul>
+            <li>Unique logo design</li>
+            <li>Poster with information about the event</li>
+            <li>Mockups of potential merchandise indluing t-shirts, pins, gloves, lanyards, water bottles, and event passes</li>
+        </ul>
+<h2>Design Process: Visual Research and Moodboards</h2>
+    <p>This event is based around the subculture of rhythm games within the wider gaming community. Within just the genre of rhythm based games, there are many different styles and methods of playing, all of which I wanted to capture in my visual research.</p>
+    <div class="image-block">
+        <div class="container2">
+        <img src="images/poster/Moodboard_1.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 1</div>
+        </div>
+        </div>
+        <div class="container2">
+        <img src="images/poster/moodboard_2.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 2</div>
+        </div>
+        </div>
+        <div class="container2">
+        <img src="images/Poster/Moodboard_3.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 3</div>
+        </div>
+        </div>
+    </div>
+    <h2>Design Process: Thumbnails and Ideations</h2>
+    <p>My visual research provided a guide for me to come up with a name for the event and begin drafing a logo, as well as considering a layout for a potential poster.</p>
+    
+    <!-- slideshow container-->
+    <div class="slideshow-container" style="width:714px; left:15%">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4004.jpeg" style="width: 714px">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">2 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4005.jpeg" style="width: 714px">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">3 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4006.jpeg" style="width: 714px">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4007.jpeg" style="width: 714px">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4008.jpeg" style="width: 714px">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4009.jpeg" style="width: 714px">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4010.jpeg" style="width: 714px">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4011.jpeg" style="width: 714px">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4012.jpeg" style="width: 714px">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4013.jpeg" style="width: 714px">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 11</div>
+          <img src="/images/Poster/thumbnails/IMG_4014.jpeg" style="width: 714px">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+        <!-- script for slideshow-->
+            <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+            </script>
+
+<h2>Finished Logo Design</h2>
+    <div class="image-block">
+    
+      <div class="container6">
+        <img src="images/Poster/1x/Logo_4.jpg" style="width:100%;">
+          <div class="overlay2">
+           <div class="overlay-title">Full Color on White</div>
+          </div>
+      </div>
+
+      <div class="container6">
+        <img src="images/Poster/1x/Logo_1.jpg" style="width:100%;">
+          <div class="overlay2">
+           <div class="overlay-title">Pink and Blue on Black</div>
+          </div>
+      </div>
+
+      <div class="container6">
+        <img src="images/Poster/1x/Logo_2.jpg" style="width:100%;">
+          <div class="overlay2">
+           <div class="overlay-title">Black on Pink</div>
+          </div>
+      </div>
+
+      <div class="container6">
+        <img src="images/Poster/1x/Logo_3.jpg" style="width:100%;">
+          <div class="overlay2">
+           <div class="overlay-title">White on Blue</div>
+          </div>
+
+      </div>
+    </div>
+    <br>
+<h2>Finished Poster Design</h2>
+  <div class="image-block">
+    <img src="images/Poster/Poster.jpg" style="max-height: 800px;">
+  </div>
+
+<h2>Poster and Mockups Vignette</h2>
+  <p>Once the poster was created. I took elements from the poster and populated them onto other mediums, creating merchandise with the same branding. The items include a lanyard and ticket pass for the event, pins, a water bottle, a pair of gloves, and a t-shirt.</p>
+  <div class="image-block">
+    <img src="images/Poster/vignette.jpg" style="max-width: 800px;">
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Brochure Project </title>
+<!--meta tags: charset, http-equiv, viewport, description, keywords, author-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moss Goguen Design Portfolio">
+<meta name="keywords" content="Portfolio, design, graphic design, site, site planning, Web design, graphics,">
+<meta name="author" content="Moss Goguen">
+<!-- webpage's stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<!--text and media, visble to user -->
+<body>
+<!--sidebar navigation-->
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <button class="dropdown-btn"> Projects 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <diva class="current-page" href="Brochure-project.html">Branding and Brochure Design</diva>
+            <a href="Style-guide-project.html">Style Guide Design</a>
+            <a href="Poster-nd_vignette-project.html">Festival Branding Design</a>
+        </div>
+        <a href="contact.html">Contact</a>
+      </div>
+<!--Script for sidebar navogation-->
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script> 
+
+<header>
+    <h1>Branding and Brochure Design</h1>
+</header>
+<div class="page-elements">
+    <h2>Project Description</h2>
+    <p>This project is a brochure for a hypothetical organziation called the Astrology Learning Center, which provides information about different constellations, as well as the Greek mythology and stories that surround the constellations.
+    </p>
+
+    <b>Contained in this project:</b>
+        <ul>
+            <li>Unique logo and branding design</li>
+            <li>Illustrations with wrapped text</li>
+            <li>Header, subheaders, and informational copy</li>
+            <li>Tri-fold brochure document with unique die cut</li>
+        </ul>
+    
+ <h2>Design Process: Visual Research and Moodboards</h2>
+    <p>When coming up with the idea for my project. There were a few directions I could have followed design wise. I created three different moodboards with three potential directions for the design. While my finished design mainly follows the direction of the first one, I did take some elements and motifs into consideration from the other moodboards.</p>
+    <div class="image-block">
+        <div class="container2">
+        <img src="images/Brochure/moodboard_1.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 1</div>
+        </div>
+        </div>
+        <div class="container2">
+        <img src="images/Brochure/moodboard_2.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 2</div>
+        </div>
+        </div>
+        <div class="container2">
+        <img src="images/Brochure/moodboard_3.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 3</div>
+        </div>
+        </div>
+    </div>
+
+<h2>Design Process: Thumbnails and Ideations</h2>
+    <p>Before working digitally, I took my visual inspiration from the moodboards and started to contstuct a design for the logo of the organizaiton. In addition to drafting the logo, I Considered borchure layout, including the shape and die cut, and how I could lay out elements on a uniquely shaped document.</p>
+    
+    <!-- slideshow container-->
+    <div class="slideshow-container" style="width:350px; left:30%">
+        <div class="mySlides">
+          <div class="numbertext">1 / 18</div>
+          <img src="/images/brochure/thumbnails/IMG_1824.jpeg" style="width: 350px">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 18</div>
+          <img src="/images/brochure/thumbnails/IMG_1825.jpeg" style="width: 350px">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 18</div>
+          <img src="/images/brochure/thumbnails/IMG_1826.jpeg" style="width: 350px">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 18</div>
+          <img src="/images/brochure/thumbnails/IMG_1827.jpeg" style="width: 350px">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 18</div>
+          <img src="/images/brochure/thumbnails/IMG_1828.jpeg" style="width: 350px">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 18</div>
+          <img src="/images/brochure/thumbnails/IMG_1829.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">7 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1830.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">8 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1831.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">9 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1832.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">10 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1833.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">11 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1834.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">12 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1835.jpeg" style="width: 350px">
+         </div>
+
+        <div class="mySlides">
+            <div class="numbertext">13 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1836.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">14 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1837.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">15 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1838.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">16 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1839.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">17 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1840.jpeg" style="width: 350px">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">18 / 18</div>
+            <img src="/images/brochure/thumbnails/IMG_1841.jpeg" style="width: 350px">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+        <!-- script for slideshow-->
+            <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+            </script>
+
+
+<h2>Design Process: Brochure Maquettes</h2>
+    <p>Something unique I had to consider for this project was the unique die cut, and how that would be shaped. After drafting and skecthing out different brochure shapes and layouts, I created two different maquettes that I thought were the best of my designs.</p>
+   
+    <!--star shaped maquette-->
+    <div class="image-block">
+    <div class="container4">
+    <img src="images/Brochure/star_maquette_opened .jpeg" style="width:750px; justify-content: center;">
+    <div class="overlay2">
+        <div class="overlay-title"> Inside of Star Maquette</div>
+    </div>
+    </div>
+
+    <div class="container5">
+        <img src="images/Brochure/star_maquette_front.jpeg" style="width:100%;">
+        <div class="overlay2">
+            <div class="overlay-title"> Front of Star Maquette</div>
+        </div>
+    </div>
+    <div class="container5">
+        <img src="images/Brochure/star_maquette_back.jpeg" style="width:100%;">
+        <div class="overlay2">
+            <div class="overlay-title">Back of Star Maquette</div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <p style="width:100%">One consideration was having a star shaped die cut, which has an accordian fold and would fold out fo rthe user to read more information. However, the shape of the star does not lend itself well to having a signifcant amount of space to place elements on top of. In addition, the shape would also make the brochure uncomforable to hold, and the star points also leave it prone to easy ripping. While I did enjoy the design and wanted it to work, I had to pivot. </p>
+
+    <!--dome maquette-->
+    <div class="image-block">
+    
+        <div class="container3">
+            <img src="images/Brochure/dome_maquette_front.jpeg" style="width:100%;">
+            <div class="overlay2">
+                <div class="overlay-title"> Front of Dome Maquette</div>
+            </div>
+        </div>
+        <div class="container3">
+            <img src="images/Brochure/dome_maquette_back.jpeg" style="width:100%;">
+            <div class="overlay2">
+                <div class="overlay-title">Back of Dome Maquette</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <p style="width: 100%">Upon pivoting, I went back and simplified my approach. Looking back at my moodboards, I looked more specifcally at cartography and star maps, and considered the shape of a half circle for the die cut. cartography in general has a lot of circular forms with things like compasses, and degrees of longitude, and constellations are often depicted in a circular map form. In addition to this, Greek mythology around the constellations depicts the night sky as a dome around the Earth, casted in bronze. Because I felt like this shape has multiple connections to the themes and ideas I researched, I went with a dome shaped tri-fold document, which felt more subtle than the star, while still having relation to the theme and ledning itself to more space avaiable for content.</p>
+    <br>
+<h2>Finished Logo Design</h2>
+   
+    <div class="image-block">
+        <div class="container2">
+        <img src="images/Brochure/Logo_1.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title">White logo on block</div>
+        </div>
+        </div>
+    <div class="container2">
+        <img src="images/Brochure/Logo_2.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title">Gold logo on navy blue</div>
+        </div>
+    </div>
+    <div class="container2">
+        <img src="images/Brochure/Logo_3.jpg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Black logo on white </div>
+        </div>
+    </div>
+    </div>
+<h2>Finished Brochure Design</h2>
+<p>For the brochure layout, I wanted the background to somewhat resemble an older map, with longitude lines, roman numerals, and a grid. I also considered this map like quality when arranging the constellations and tried to make the position of the constellations line up roughly with where they would be drawn on a map.</p>
+
+    <div class="image-block">
+        <img src="images/Brochure/Brochure_final_inside.jpg" style="width:65%">
+        <img src="images/Brochure/Brochure_final_outside.jpg" style="width:65%">
+    </div>
+    <p><em>The magenta is not intended for print and indicates the die line.</em></p>
+</div>  
+    <!--Footer, contains contact info, email hyperlink-->
+<footer>
+    <p>
+        <a href="https://www.linkedin.com/in/moss-goguen/" target="_blank">LinkedIn</a>
+        <a href="mailto:moss.a.goguen@gmail.com">Email</a>
+    </p>
+</footer>
+</body>
+</html>

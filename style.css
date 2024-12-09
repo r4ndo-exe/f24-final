@@ -1,0 +1,359 @@
+/*css styles*/
+/*museo slab rounded 700 for main titles, 500 for subheads, allotrope 400 normal & italic, 600 normal & italic?*/
+@import url("https://use.typekit.net/apk5eup.css");
+/*variable colors, header background, and text colors*/
+:root {
+	--copy-green: #34562f;
+    --subhead-green: #304a2b;
+    --Title-green: #d0f7cc;
+    --background-green: #1d341a;
+    --regular-background: #fbf1dc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+  background-color: var(--regular-background);
+}
+.body {
+    background-color: var(--regular-background);
+}
+/*basic text styling, h1, h2, p*/
+h1 {
+    font-family: 'museo-slab-rounded', serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--subhead-green);
+   padding-left: 225px;
+   padding-top: 25px;
+}
+h2 {
+    font-family: 'museo-slab-rounded', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--subhead-green);
+    margin-bottom: 10px;
+    display: block;
+}
+p, ul, b {
+    font-family: 'allotrope', sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--copy-green);
+    margin-top: 5px;
+    display: block;
+    max-width: 55%;
+    margin-bottom: 15px;
+}
+
+b {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+em {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+li {
+    font-family: 'allotrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--copy-green);
+    margin-top: 10px;
+    text-indent: 15px;
+    list-style-position: inside;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--regular-background);
+    position: sticky;
+    border-bottom: var(--background-green) double 5px;
+    top: 0;
+    z-index: 1;
+}
+.page-elements {
+    margin-left: 200px;
+    padding: 25px;
+    background-color: var(--regular-background);
+}
+
+/*image containers with name overlay*/
+.image-block {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+	background-color: var(--regular-background);
+  display: block;
+}
+.container {
+    position: relative;
+    width: 31%;
+    height: 250px;
+    overflow: clip;
+    float: left;
+    margin: 10px;
+  }
+  
+  .image {
+    width: 100%;
+    vertical-align: middle;
+
+  }
+
+.overlay-title {
+    font-family: 'museo-slab-rounded', serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+    opacity:0;
+    font-family: 'allotrope', sans-serif;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .footer {
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	background-color: var(--background-green);
+	display: block;
+  }
+
+/*sidebar*/
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: var(--background-green);
+    overflow-x: hidden;
+    padding-top: 100px;
+  }
+ 
+  .sidenav a, .dropdown-btn {
+    padding: 15px 13px 15px 16px;
+    text-decoration: none;
+    font-family: 'museo-slab-rounded', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #c0c0c0;
+    display: block;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: var(--regular-background) solid 3px;
+  }
+  
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: var(--Title-green);
+  }
+
+  .active {
+    background-color: var(--subhead-green);
+    color: var(--Title-green);
+  }
+  
+  .dropdown-container {
+    display: none;
+    background-color: var(--copy-green);
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  /*different section is toggled on to indicate what page the user is currently on*/
+  .current-page {
+    padding: 15px 13px 15px 16px;
+    text-decoration: none;
+    font-family: 'museo-slab-rounded', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--Title-green);
+    display: block;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: var(--regular-background) solid 3px;
+  }
+  
+  /*image slideshow with arrows*/
+  /* Position the image container (needed to position the left and right arrows) */
+.slideshow-container {
+    position: relative;
+    width: 350px;
+    left: 30%;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(37, 64, 46, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-family: 'allotrope', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+
+  /*container for 3 images side by side, with smaller overlay cpations*/
+  .container2 {
+    position: relative;
+    width: 31%;
+    overflow: clip;
+    float: left;
+    margin: 10px;
+  }
+
+  .overlay2 {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    font-family: 'allotrope', sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  /*50/50 containers */
+  .container3 {
+    position: relative;
+    width: 48%;
+    overflow: clip;
+    margin: 10px;
+    float: left;
+  }
+
+  
+  /*single image container with two little ones on tha side*/
+  .container4 {
+    margin-left: auto;
+   position: relative;
+   bottom: 0;
+   float: left;
+  }
+
+
+  .container5 {
+    position: relative;
+    width: 33%;
+    overflow: clip;
+    float: left;
+    margin: 10px;
+  }
+  .container6 {
+    margin-left: 15%;
+    margin-right: 10%;
+   position: relative;
+   bottom: 0;
+  }
+
+td {
+	border-color: var(--regular-background);
+	border-style: solid;
+	width: 25%;
+}
+
+legend {
+  font-family: "allotrope", sans-serif;
+  font-size: 32px;
+  color: var(--subhead-green);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+label {
+  font-family: "allotrope", sans-serif;
+  font-size: 24px;
+  color: var(--copy-green);
+}
+
+input, textarea {
+  min-height: 40px;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  min-width: 200px;
+  font-family: 'allotrope', sans-serif;
+  text-indent: 8px;
+  display: block;
+}
+
+textarea {
+  width: 450px;
+}

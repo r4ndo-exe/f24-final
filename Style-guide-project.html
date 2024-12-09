@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Style Guide Project</title>
+<!--meta tags: charset, http-equiv, viewport, description, keywords, author-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moss Goguen Design Portfolio">
+<meta name="keywords" content="Portfolio, design, graphic design, site, site planning, Web design, graphics,">
+<meta name="author" content="Moss Goguen">
+<!-- webpage's stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<!--text and media, visble to user -->
+<body>
+<!--sidebar navigation-->
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <button class="dropdown-btn"> Projects 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="Brochure-project.html">Branding and Brochure Design</a>
+            <diva class="current-page" href="Style-guide-project.html"> Style Guide Design </diva>
+            <a href="Poster-nd_vignette-project.html">Festival Branding Design</a>
+        </div>
+        <a href="contact.html">Contact</a>
+</div>
+<!--Script for sidebar navigation-->
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script> 
+
+<header>
+    <h1>Style Guide Design</h1>
+</header>
+<div class="page-elements">
+    <h2>Project Description</h2>
+    <p>This style guide was based on the Warm Up America Foundation, a non-profit organization that collects and creates knitted and crocheted works for those in need of blankets and clothing. My project conists of a hypothetical rebrand for the organziation, and the rules and guidelines that come along with that redesign. 
+    </p>
+    
+    <b>Contained in this project:</b>
+        <ul>
+            <li>A complete style guide document</li>
+            <li>Logo design, and logo use guidelines</li>
+            <li>Color systems, including a primary and secondary pallete</li>
+            <li>Type systems, defined uses for specific types of typography, and specifc settings for paragraph styles</li>
+            <li>12-column grid system for content layout</li>
+            <li>Defined use of illustrations, imagery, and collateral systems that match the above listed rules of the style guide</li>
+        </ul>
+    
+ <h2>Design Process: Visual Research and Moodboards</h2>
+    <p>When designing for a non profit, I found it important to visually explore ideas of community, comfort, warmth, and togetherness, as well as research the design and visual aesthetics of fiber arts, as the angle of donating handmade works is something that is unique to the foundation when compared to other non-profits.</p>
+    <div class="image-block">
+        <div class="container2">
+        <img src="images/Style-Guide/Moodboard_1.jpeg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 1</div>
+        </div>
+        </div>
+        <div class="container2">
+        <img src="images/Style-Guide/moodboard_2.jpeg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 2</div>
+        </div>
+        </div>
+        <div class="container2">
+        <img src="images/Style-Guide/moodboard_3.jpeg" style="width:100%">
+        <div class="overlay2">
+            <div class="overlay-title"> Moodboard 3</div>
+        </div>
+        </div>
+    </div>
+
+<h2>Design Process: Thumbnails and Ideations</h2>
+    <p>From my moodboards, I went on to sketching out ideas that combined the themes and ideas from the three moodboards above. I also considered page layout template designs, and how the grid system would be set up for the document creation.</p>
+        <table>
+            <tr>
+                <td><img src="images/Style-Guide/thumbnails/IMG_2141.jpeg/" style="width: 252px; height: 336px;"> </td>
+                <td><img src="images/Style-Guide/thumbnails/IMG_2142.jpeg/" style="width: 252px; height: 336px;"> </td>
+                <td><img src="images/Style-Guide/thumbnails/IMG_2143.jpeg/" style="width: 252px; height: 336px;"> </td>
+                <td><img src="images/Style-Guide/thumbnails/IMG_2144.jpeg/" style="width: 252px; height: 336px;"> </td>
+            </tr>
+            <tr>
+                <td><img src="images/Style-Guide/thumbnails/IMG_2145.jpeg/" style="width: 252px; height: 336px;"> </td>
+                <td><img src="images/Style-Guide/thumbnails/IMG_2146.jpeg/" style="width: 252px; height: 336px;"> </td>
+                <td><img src="images/Style-Guide/thumbnails/IMG_2147.jpeg/" style="width: 252px; height: 336px;"> </td>
+                <td><img src="images/Style-Guide/thumbnails/IMG_2148.jpeg/" style="width: 252px; height: 336px;"> </td>
+            </tr>
+        </table>
+  
+	<h2>Finished Style Guide Design</h2>
+	<p>The complete style guide contains 32 pages and outlines each aspect of branding and styling, as well as follows the mentioned styling guidelines.</p>
+	<div class="image-block" >
+ <!-- slideshow container-->
+    <div class="slideshow-container" style="width:647px; left:18%;">
+        
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_01.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_02.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_03.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_04.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_05.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_06.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_07.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_08.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_09.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_010.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_011.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_012.jpg" style="height:500px">
+        </div>
+        
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_013.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_014.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_015.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_016.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_017.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_018.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_019.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_020.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_021.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_022.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_023.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_024.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_025.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_026.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_027.jpg" style="height:500pxx">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_028.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_029.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style0Guide/Pages/page_030.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_031.jpg" style="height:500px">
+        </div>
+
+        <div class="mySlides">
+        <img src="/images/Style-Guide/Pages/page_032.jpg" style="height:500px">
+        </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+</div>
+
+     <!-- script for slideshow-->
+     <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+    </script>
+
+<h2>Physical Spiral Bound Booklet</h2>
+	<p>This guide is intended to be used as a phsyical printed booklet on 8.5" x 11" paper </p>
+	<div class="image-block">
+		<div class="containter3">
+		<img src="images/Style-Guide/Printed-pages/IMG_2564.jpeg" style="width:40%">
+		</div>
+		<div class="containter3">
+		<img src="images/Style-Guide/Printed-pages/IMG_2565.jpeg" style="width:40%">
+		</div>
+		<div class="containter3">
+		<img src="images/Style-Guide/Printed-pages/IMG_2566.jpeg" style="width:40%">
+		</div>
+		<div class="containter3">
+		<img src="images/Style-Guide/Printed-pages/IMG_2567.jpeg" style="width:40%">
+		</div>
+		<div class="containter3">
+		<img src="images/Style-Guide/Printed-pages/IMG_2568.jpeg" style="width:40%">
+		</div><div class="containter3">
+		<img src="images/Style-Guide/Printed-pages/IMG_2569.jpeg" style="width:40%">
+		</div>
+		</div><div class="containter3">
+		<img src="images/Style-Guide/Printed-pages/IMG_2570.jpeg" style="width:40%">
+
+	</div>
+<!--end of page dont touch div-->
+	</div>
+</body>
+</html>

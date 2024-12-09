@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Moss Goguen Portfolio </title>
+<!--meta tags: charset, http-equiv, viewport, description, keywords, author-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Moss Goguen Design Portfolio">
+    <meta name="keywords" content="Portfolio, design, graphic design, site, site planning, Web design, graphics,">
+    <meta name="author" content="Moss Goguen">
+<!-- webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--text and media, visble to user -->
+<body>
+<header>
+    <h1>Moss Goguen Portfolio</h1>
+</header>
+<!--Sidebar navigation-->
+<div class="sidenav">
+    <diva class="current-page" href="index.html">Home</diva>
+    <button class="dropdown-btn"> Projects 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="Brochure-project.html" >Branding and Brochure Design</a>
+        <a href="Style-guide-project.html" >Style Guide Design</a>
+        <a href="Poster-nd_vignette-project.html" >Festival Branding Design</a>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+<!--Script for sidebar navigation-->
+  <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    </script> 
+
+<div class="page-elements">
+    <p>Hello, I'm Moss! I'm currently a student at De Anza College, planning to transfer and obtain a Bachelor's of Fine Arts in Graphic Design. Below you can see examples of my works in graphic design over the years.</p>
+    <h2>Work examples</h2>
+<!--hyperlinks setup, change to images, add alt text to images-->
+<div class="image-block">
+<a href="Brochure-project.html">
+    <div class="container">
+        <img src="/images/index/Brochure_logo.jpg" alt="Branding and Brochure Design" class="image">
+            <div class="overlay">
+                <div class="overlay-title">Branding and <br>Brochure Design</div>
+                This project is a brochure for a hypothetical organziation called the Astrology Learning Center, which provides information about different constellations, as well as the Greek mythology and stories that surround the constellations.
+            </div>
+    </div>
+ </a>
+ <a href="Style-guide-project.html">
+        <div class="container">
+            <img src="/images/index/Style_Guide_Cover.jpg" alt="Style Guide Design" class="image">
+                <div class="overlay">
+                    <div class="overlay-title">Style Guide Design</div>
+                    This style guide was based on the Warm Up America Foundation, a non-profit organization that collects and creates knitted and crocheted works for those in need of blankets and clothing. My project conists of a hypothetical rebrand and complete style guide.
+                </div>
+        </div>
+ </a>
+ <a href="Poster-nd_vignette-project.html">
+    <div class="container">
+        <img src="/images/index/Poster.jpg" alt="Festival Branding Design" class="image">
+            <div class="overlay">
+                <div class="overlay-title">Festival Branding Design</div>
+                Creation of a concept for a festival and convention for rhythm games. This includes logo design, an advertisment poster, and mockups of merchandise with uniform design and branding.
+            </div>
+    </div>
+ </a>
+</div>
+</div>
+</body>
+
+</html>
+<!--Planning notes:
+My website will be a personal portfolio showcasing my projects and the work and sketches behind my projects with an intended audience of future employers. I want to include image galleries with my projects, as well guide the user through the process I went through to create each project. I also want to include links to my linkedin and email to provide an easy way to contact me for the purposes -->
